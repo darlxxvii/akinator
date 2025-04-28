@@ -68,7 +68,7 @@ function GamePage() {
 
   const askClaude = async (messages) => {
     try {
-      const response = await axios.post('http://localhost:5001/api/ask', { messages });
+      const response = await axios.post('https://akinator-clone-server.onrender.com/api/ask', { messages });
   
       const text = response?.data?.message;
       if (!text) {
