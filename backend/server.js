@@ -30,6 +30,7 @@ app.post("/api/ask", async (req, res) => {
       body: JSON.stringify({
         model: "anthropic/claude-3-sonnet", 
         messages: openRouterMessages,
+        max_tokens: 1000, 
       }),
     });
 
